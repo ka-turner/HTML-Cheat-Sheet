@@ -1,0 +1,7 @@
+.tab {
+    text-indent: 40px;
+}
+
+.double-tab {
+    text-indent: 80px;
+}

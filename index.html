@@ -1,0 +1,630 @@
+<!-- &lt; = "<" -->
+<!-- &gt; = ">" -->
+<!-- &lt; &gt; -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+        <link href="./resources/css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>HTML Cheat Sheet</h1>
+
+        <h2>Basic HTML Outline</h2>
+        <p id="outline">&lt;!DOCTYPE&gt; <br> 
+            &lt;html&gt; <br>
+            <span class="tab">&lt;head&gt;</span> <br>
+            <span class="double-tab">&lt;title&gt; &lt;/title&gt;</span> <br>
+            <span class="tab">&lt;/head&gt;</span> <br> <br>
+            <span class="tab">&lt;body&gt;</span> <br> <br>
+            <span class="tab">&lt;/body&gt;</span> <br> 
+            &lt;/html&gt; <br>
+        </p>
+
+        <h2>HTML Tags</h2>
+        <table style="width:100%">
+            <tr>
+                <th scope="col" style="width:15%">Tag</th>
+                <th scope="col" style="width:15%">Description</th>
+                <th scope="col" style="width:20%">Attributes</th>
+                <th scope="col" style="width:25%">Example</th>
+                <th scope="col" style="width:25%">Output</th>
+            </tr>
+            <tr>
+                <td class="code">&lt;h1&gt;&lt;/h1&gt; <br> ... <br> &lt;h6&gt;&lt;/h6&gt;</td>
+                <td><span class="tag-name">Heading</span> <br> Ranges from h1 - h6. </td>
+                <td></td>
+                <td class="code">&lt;h1&gt;This is a h1 heading&lt;/h1&gt; <br> &lt;h2&gt;This is a h2 heading&lt;/h2&gt; <br> &lt;h3&gt;This is a h3 heading&lt;/h3&gt; <br> &lt;h4&gt;This is a h4 heading&lt;/h4&gt; <br> &lt;h5&gt;This is a h5 heading&lt;/h5&gt; <br> &lt;h6&gt;This is a h6 heading&lt;/h6&gt;</td>
+                <td><h1>This is a h1 heading</h1> <h2>This is a h2 heading</h2> <h3>This is a h3 heading</h3> <h4>This is a h4 heading</h4> <h5>This is a h5 heading</h5> <h6>This is a h6 heading</h6></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;p&gt;&lt;/p&gt;</td>
+                <td><span class="tag-name">Paragraph</span> <br> Used to contain a block of plain text</td>
+                <td></td>
+                <td class="code">&lt;p&gt;This is a paragraph&lt;/p&gt;</td>
+                <td><p>This is a paragraph</p></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;span&gt;&lt;/span&gt;</td>
+                <td><span class="tag-name">Span</span> <br> Contain short pieces of text or other HTML. Span is used to separate small pieces of content that are on the same line as other content</td>
+                <td></td>
+                <td class="code">&lt;p&gt;This shows how a &lt;span&gt; SPAN TAG &lt;/span&gt; can be used within a paragraph tag&lt;/p&gt;</td>
+                <td><p>This shows how a <span class="span-example">SPAN TAG</span> can be used within a paragraph</p></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;em&gt;&lt;/em&gt;</td>
+                <td><span class="tag-name">Emphasize</span> <br> Used to italicize text</td>
+                <td></td>
+                <td class="code">&lt;em&gt;This text is italicized&lt;/em&gt;</td>
+                <td><em>This text is italicized</em></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;strong&gt;&lt;/strong&gt;</td>
+                <td><span class="tag-name">Strong</span> <br> Used to bold text</td>
+                <td></td>
+                <td class="code">&lt;strong&gt;This text is bold&lt;/strong&gt;</td>
+                <td><strong>This text is bold</strong></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;br&gt;</td>
+                <td><span class="tag-name">Break</span> <br> Used to add line breaks between HTML elements</td>
+                <td></td>
+                <td class="code">This text &lt;br&gt; is on different &lt;br&gt; lines </td>
+                <td>This text <br> is on different <br> lines</td>
+            </tr>
+            <tr>
+                <td class="code">&lt;ul&gt; <br> <span class="tab">&lt;li&gt; &lt;/li&gt;</span> <br> <span class="tab">&lt;li&gt; &lt;/li&gt;</span> <br> <span class="tab">&lt;li&gt; &lt;/li&gt;</span> <br> &lt;/ul&gt;</td>
+                <td><span class="tag-name">Unordered list</span> <br> Create a list of items in no particular order. The default bullet point shape is a circle</td>
+                <td></td>
+                <td class="code">&lt;ul&gt; <br> <span class="tab">&lt;li&gt;List item&lt;/li&gt;</span> <br> <span class="tab">&lt;li&gt;List item&lt;/li&gt;</span> <br> <span class="tab">&lt;li&gt;List item&lt;/li&gt;</span> <br> &lt;/ul&gt;</td>
+                <td>
+                    <ul>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="code">&lt;ol&gt; <br> <span class="tab">&lt;li&gt; &lt;/li&gt;</span> <br> <span class="tab">&lt;li&gt; &lt;/li&gt;</span> <br> <span class="tab">&lt;li&gt; &lt;/li&gt;</span> <br> &lt;/ol&gt;</td>
+                <td><span class="tag-name">Ordered list</span> <br> Create a numbered list of items.</td>
+                <td></td>
+                <td class="code">&lt;ol&gt; <br> <span class="tab">&lt;li&gt;List item&lt;/li&gt;</span> <br> <span class="tab">&lt;li&gt;List item&lt;/li&gt;</span> <br> <span class="tab">&lt;li&gt;List item&lt;/li&gt;</span> <br> &lt;/ol&gt;</td>
+                <td>
+                    <ol>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td class="code">&lt;img src=" " /&gt;</td>
+                <td><span class="tag-name">Image</span> <br> Allows you to add an image to a web page</td>
+                <td> <strong>src=" "</strong> A required attribute that must be set to the image's source, or the location of the image <br> <strong>alt=" "</strong> An optional attribute that increases accessibility to include a description for screen readers or if the image is unable to load <br> <strong>width=" "</strong> Allows you to specify the width of the image <br> <strong>height=" "</strong> Allows you to specify the height of the image</td>
+                <td class="code">&lt;img src="./resources/images/background.jpeg" alt="Background image" width="200px" height="150px"/&gt;</td>
+                <td><img src="./resources/images/background.jpeg" alt="Background image" width="200px" height="150px"/></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;video src=" "&gt;Video not supported&lt;/video&gt;</td>
+                <td><span class="tag-name">Video</span> <br> Allows you to add a video to a web page</td>
+                <td> <strong>src=" "</strong> A required attribute that must be set to the video's source, or the location of the video <br> <strong>width=" "</strong> Allows you to specify the width of the video <br> <strong>height=" "</strong> Allows you to specify the height of the video <br>
+                <strong>controls</strong> Instructs the browser to include basic video controls such as pausing and playing <br> <strong>autoplay</strong> means that the video will automatically play as soon as the page loads <br> <strong>loop</strong> tells the browswer to continuously play the video on repeat </td>
+                <td class="code">&lt;video src="./resources/videos/video.mov" width="200px" height="150px" controls&gt;Video not supported&lt;/video&gt;</td>
+                <td><video src="./resources/videos/video.mov" width="200px" height="150" controls>Video not supported</video></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;a href=" "&gt;Link Name&lt;/a&gt;</td>
+                <td><span class="tag-name">Anchor</span> <br> Used to add links to a web page</td>
+                <td> <strong>href=" "</strong> A required attribute that must be set to the link's path, or the address where a file is located <br> <strong>target="_blank"</strong> Instructs the website to open the link in a new tab</td>
+                <td class="code">&lt;a href="https://www.wikpedia.org/" target="_blank"&gt;Click here to go to Wikipedia&lt;/a&gt;</td>
+                <td><a href="https://www.wikipedia.org/" target="_blank">Click here to go to Wikipedia</a></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;!-- --&gt;</td>
+                <td><span class="tag-name">Comment</span> <br> Use this to add comments to your code</td>
+                <td></td>
+                <td class="code">&lt;!-- This is a comment, nothing will get rendered on the page --&gt;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;header&gt; <br> <br> &lt;/header&gt;</td>
+                <td><span class="tag-name">Header</span> <br> A container usually for either navigational links or introductory content containing &lt;h1&gt; to &lt;h6&gt; headings</td>
+                <td></td>
+                <td class="code"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;nav&gt; <br> <br> &lt;/nav&gt;</td>
+                <td><span class="tag-name">Navigation</span> <br> Used to define a block of navigation links such as menus or tables of contents. It can be used inside of the &lt;header&gt; element or on its own</td>
+                <td></td>
+                <td class="code">&lt;header&gt; <br> <span class="tab">&lt;nav&gt;</span> <br> <span class="double-tab">&lt;ul&gt;</span> <br> <span class="triple-tab">&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;</span> <br> <span class="triple-tab">&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;</span> <br> <span class="double-tab">&lt;/ul&gt;</span> <br> <span class="tab">&lt;/nav&gt;</span> <br> &lt;/header&gt;</td>
+                <td><ul><li><a>Home</a></li><li><a>About</a></li></ul></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;main&gt; <br> <br> &lt;/main&gt;</td>
+                <td><span class="tag-name">Main</span> <br> Used to encapsulate the dominant content within a webpage. Helps to separate the main body from the navigation links and footer</td>
+                <td></td>
+                <td class="code"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;footer&gt; <br> <br> &lt;/footer&gt;</td>
+                <td><span class="tag-name">Footer</span> <br> The content on the bottom of the subject information. Contains information such as contact information, copyright information, terms of use, site map, or reference to top of page links</td>
+                <td></td>
+                <td class="code"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;section&gt; <br> <br> &lt;/section&gt;</td>
+                <td><span class="tag-name">Section</span> <br> Defines elements in a document, such as chapters, headings, or any other area of the document with the same theme</td>
+                <td></td>
+                <td class="code">&lt;section&gt; <br> <span class="tab">&lt;h1&gt;All About Moose&lt;/h1&gt;</span> <br> <span class="tab">&lt;p&gt;Most people know that moose are big, but they don't know that moose are HUGE. The average female weighs 771 lbs. and the average male weighs 881 lbs. They can get as big as 1,800 lbs.!&lt;/p&gt;</span> <br> <span class="tab">&lt;img src="./resources/images/moose.jpeg" alt="Moose image" width="200px" height="150px"/&gt;</span> <br> &lt;/section&gt;</td>
+                <td><h1>All About Moose</h1> <p>Most people know that moose are big, but they don't know that moose are HUGE. The average female weighs 771 lbs. and the average male weighs 881 lbs. They can get as big as 1,800 lbs.!</p> <img src="./resources/images/moose.jpeg" alt="Moose image" width="200px" height="150px"/></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;article&gt; <br> <br> &lt;/article&gt;</td>
+                <td><span class="tag-name">Article</span> <br> Holds content that makes sense on its own</td>
+                <td></td>
+                <td class="code">&lt;article&gt; <br> <span class="tab">&lt;h4&gt;Comments from Customers&lt;/h4&gt;</span> <br> <span class="tab">&lt;p&gt;This is the best pizza ever! -Kevin G.&lt;/p&gt;</span> <br> <span class="tab">&lt;p&gt;Great food, great atmosphere, and great experience! -Paula D.&lt;/p&gt;</span> <br> &lt;/article&gt;</td>
+                <td><article><h4>Comments from Customers</h4><p>This is the best pizza ever! -Kevin G.</p><p>Great food, great atmosphere, and great experience! -Paula G.</p></article></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;aside&gt; <br> <br> &lt;/aside&gt;</td>
+                <td><span class="tag-name">Aside</span> <br> Used to mark additional information that can enhance another element but isn't required in order to understand the main content. <br> <br> Common uses: bibliographies, end notes, comments, pull quotes, editorial sidebars, or additional information.</td>
+                <td></td>
+                <td class="code">&lt;article&gt; <br> <span class="tab">&lt;p&gt;The first World Series was played between Pittsburg and Boston in 1903 and was a nine game series.&lt;/p&gt;</span> <br> &lt;/article&gt; <br> &lt;aside&gt; <br> <span class="tab">&lt;p&gt;Babe Ruth one stated, "Heroes get remembered, but legends never die."&lt;/p&gt;</span> <br> &lt;/aside&gt; </td>
+                <td><article><p>The first World Series was played between Pittsburg and Boston in 1903 and was a nine game series.</p> </article> <aside><p>Babe Ruth one stated, "Heroes get remembered, but legends never die."</p></aside></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;figure&gt; <br> <span class="tab">&lt;img src=" "&gt;</span> <br> &lt;/figure&gt;</td>
+                <td><span class="tag-name">Figure</span> <br> Used to encapsulate media such as an image, illustration, diagram, code snippet, etc., which is referenced in the main flow of the document</td>
+                <td>A required <strong><span class="code">&lt;img&gt;</span></strong> tag is used with a <strong><span class="code">src</span></strong> attribute, which specifies the location and file name of the figure </td>
+                <td class="code">&lt;figure&gt; <br> <span class="tab">&lt;img src="./resources/images/cool-image.jpeg"&gt; <br> &lt;/figure&gt; </td>
+                <td><figure><img src="./resources/images/cool-image.jpeg"></figure></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;figcaption&gt; <br> <br> &lt;/figcaption&gt;</td>
+                <td><span class="tag-name">Figcaption</span> <br> Used to describe the media in the &lt;figure&gt; tag</td>
+                <td></td>
+                <td class="code">&lt;figure&gt; <br> <span class="tab">&lt;img src="./resources/images/hot-air-balloons.jpeg"&gt; <br> <span class="tab">&lt;figcaption&gt; Hot Air Balloon Festival in Colorado Springs &lt;/figcaption&gt;</span> <br> &lt;/figure&gt; </td>
+                <td><figure><img src="./resources/images/hot-air-balloons.jpeg"><figcaption>Hot Air Balloon Festival in Colorado Springs</figcaption></figure></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;audio autoplay controls&gt; <br> <span class="tab">&lt;source src=" " type=" "&gt;</span> <br> &lt;/audio&gt;</td>
+                <td><span class="tag-name">Audio</span> <br> Used to embed audio content into a document</td>
+                <td>The <strong><span class="code">&lt;source&gt;</span></strong> tag is used along with the <strong><span class="code">src</span></strong> attribute, which specifies the location of the audio file or URL, and <strong><span class="code">type</span></strong> attribute, which indicates the type of audio file to the browser. <br> <strong >autoplay</strong> can be used inside the opening <span class="code">&lt;audio&gt;</span> tag to tell the browser to start playing the audio as soon as the page loads <br> <strong>controls</strong> can be used inside the opening <span class="code">&lt;audio&gt;</span> tag to automatically display the audio controls into the browser such as play and mute</td>
+                <td class="code">&lt;audio controls&gt; <br> <span class="tab">&lt;source src="./resources/audio/mixkit-natural-ambiance-with-flowing-water-and-birds-61.wav" type="audio/wav"&gt; <br> &lt;/audio&gt; </td>
+                <td><audio controls><source src="./resources/audio/mixkit-natural-ambience-with-flowing-water-and-birds-61.wav" type="audio/wav"></audio></td>
+            </tr>
+        </table>
+
+        <h2>HTML Tables</h2>
+        <table style="width:100%">
+            <tr>
+                <th scope="col" style="width:15%">Tag</th>
+                <th scope="col" style="width:15%">Title</th>
+                <th scope="col" style="width:20%">Attributes</th>
+                <th scope="col" style="width:25%">Code</th>
+                <th scope="col" style="width:25%">Output</th>
+            </tr>
+            <tr>
+                <td class="code">&lt;table&gt; <br> <br> &lt;/table&gt;</td>
+                <td>Create a Table</td>
+                <td></td>
+                <td class="code">&lt;table&gt; <br> <br> &lt;/table&gt;</td>
+                <td><table></table></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;tr&gt; <br> <br> &lt;/tr&gt;</td>
+                <td>Table Rows</td>
+                <td></td>
+                <td class="code">&lt;table&gt; <br> <span class="tab">&lt;tr&gt;</span> <br> <span class="tab">&lt;/tr&gt;</span> <br> <span class="tab">&lt;tr&gt;</span> <br> <span class="tab">&lt;/tr&gt;</span> <br> &lt;/table&gt;</td>
+                <td><table><tr></tr><tr></tr></table></td>
+            </tr>
+            <tr>
+                <td class="code">&lt;th scope=" "&gt;&lt;/th&gt;</td>
+                <td>Table Heading</td>
+                <td><strong>scope=" "</strong> can take a value of either <span class="code">col</span> or <span class="code">row</span>, which tells the browser if it is a column header or row header</td>
+                <td class="code">&lt;table&gt; <br> <span class="tab">&lt;tr&gt;</span> <br> <span class="double-tab">&lt;th&gt;&lt;/th&gt;</span> <br> <span class="double-tab">&lt;th scope="col"&gt;Temperature&lt;/th&gt;</span> <br> <span class="double-tab">&lt;th scope="col"&gt;Wind Speed&lt;/th&gt;</span> <br> <span class="tab">&lt;/tr&gt;</span> <br> <span class="tab">&lt;tr&gt;</span> <br> <span class="double-tab">&lt;th scope="row"&gt;Saturday&lt;/th&gt;</span> <br> <span class="tab">&lt;/tr&gt;</span> <br> <span class="tab">&lt;tr&gt;</span> <br> <span class="double-tab">&lt;th scope="row"&gt;Sunday&lt;/th&gt;</span> <br> <span class="tab">&lt;/tr&gt;</span> <br> &lt;/table&gt;</td>
+                <td>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th scope="col">Temperature</th>
+                            <th scope="col">Wind Speed</th> 
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturday</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sunday</th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="code">&lt;td&gt;&lt;/td&gt;</td>
+                <td>Table Data</td>
+                <td><strong>colspan="#"</strong> takes an integer (greater than or equal to 1) to denote the number of columns it spans across <br> <strong>rowspan="#"</strong> takes an integer (greater than or equal to 1) to denote the number of rows to span across</td>
+                <td class="code">
+                    &lt;table&gt; <br> 
+                        <span class="tab">&lt;tr&gt;</span> <br> 
+                            <span class="double-tab">&lt;th&gt;&lt;/th&gt;</span> <br> 
+                            <span class="double-tab">&lt;th scope="col"&gt;Temperature&lt;/th&gt;</span> <br> 
+                            <span class="double-tab">&lt;th scope="col"&gt;Wind Speed&lt;/th&gt;</span> <br> 
+                        <span class="tab">&lt;/tr&gt;</span> <br> 
+                        <span class="tab">&lt;tr&gt;</span> <br> 
+                            <span class="double-tab">&lt;th scope="row"&gt;Saturday&lt;/th&gt;</span> <br> 
+                            <span class="double-tab">&lt;td&gt;80</span> <br>
+                            <span class="double-tab">&lt;td&gt;3 mph</span> <br>
+                        <span class="tab">&lt;/tr&gt;</span> <br> 
+                        <span class="tab">&lt;tr&gt;</span> <br> 
+                            <span class="double-tab">&lt;th scope="row"&gt;Sunday&lt;/th&gt;</span> <br> 
+                            <span class="double-tab">&lt;td&gt;87</span> <br>
+                            <span class="double-tab">&lt;td&gt;12 mph</span> <br>
+                        <span class="tab">&lt;/tr&gt;</span> <br> 
+                    &lt;/table&gt;
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th scope="col">Temperature</th>
+                            <th scope="col">Wind Speed</th> 
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturday</th>
+                            <td>80</td>
+                            <td>3 mph</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sunday</th>
+                            <td>87</td>
+                            <td>12 mph</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="code">&lt;tbody&gt; <br> <br> &lt;/tbody&gt;</td>
+                <td>Table Body <br> <br> Enables long tables to be sectioned off. Should contain all of the table's data, excluding the first row headings</td>
+                <td></td>
+                <td class="code">
+                    &lt;table&gt; <br> 
+                        <span class="tab">&lt;tr&gt;</span> <br> 
+                            <span class="double-tab">&lt;th&gt;&lt;/th&gt;</span> <br> 
+                            <span class="double-tab">&lt;th scope="col"&gt;Temperature&lt;/th&gt;</span> <br> 
+                            <span class="double-tab">&lt;th scope="col"&gt;Wind Speed&lt;/th&gt;</span> <br> 
+                        <span class="tab">&lt;/tr&gt;</span> <br> 
+                        <span class="tab">&lt;tbody&gt;</span>
+                            <span class="double-tab">&lt;tr&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="row"&gt;Saturday&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;td&gt;80</span> <br>
+                                <span class="triple-tab">&lt;td&gt;3 mph</span> <br>
+                            <span class="double-tab">&lt;/tr&gt;</span> <br> 
+                            <span class="double-tab">&lt;tr&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="row"&gt;Sunday&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;td&gt;87</span> <br>
+                                <span class="triple-tab">&lt;td&gt;12 mph</span> <br>
+                            <span class="double-tab">&lt;/tr&gt;</span> <br> 
+                        <span class="tab">&lt;/tbody&gt;</span> <br>
+                    &lt;/table&gt;
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th scope="col">Temperature</th>
+                            <th scope="col">Wind Speed</th> 
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Saturday</th>
+                                <td>80</td>
+                                <td>3 mph</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sunday</th>
+                                <td>87</td>
+                                <td>12 mph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="code">&lt;thead&gt; <br> <br> &lt;/thead&gt;</td>
+                <td>Table Head <br> <br> A table's column headings can be sectioned off</td>
+                <td></td>
+                <td class="code">
+                    &lt;table&gt; <br> 
+                        <span class="tab">&lt;thead&gt;</span> <br>
+                            <span class="double-tab">&lt;tr&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th&gt;&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="col"&gt;Temperature&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="col"&gt;Wind Speed&lt;/th&gt;</span> <br> 
+                            <span class="double-tab">&lt;/tr&gt;</span> <br> 
+                        <span class="tab">&lt;/thead&gt;</span> <br>
+                        <span class="tab">&lt;tbody&gt;</span> <br>
+                            <span class="double-tab">&lt;tr&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="row"&gt;Saturday&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;td&gt;80</span> <br>
+                                <span class="triple-tab">&lt;td&gt;3 mph</span> <br>
+                            <span class="double-tab">&lt;/tr&gt;</span> <br> 
+                            <span class="double-tab">&lt;tr&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="row"&gt;Sunday&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;td&gt;87</span> <br>
+                                <span class="triple-tab">&lt;td&gt;12 mph</span> <br>
+                            <span class="double-tab">&lt;/tr&gt;</span> <br> 
+                        <span class="tab">&lt;/tbody&gt;</span> <br>
+                    &lt;/table&gt;
+                </td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th scope="col">Temperature</th>
+                                <th scope="col">Wind Speed</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Saturday</th>
+                                <td>80</td>
+                                <td>3 mph</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sunday</th>
+                                <td>87</td>
+                                <td>12 mph</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="code">&lt;tfoot&gt; <br> <br> &lt;/tfoot&gt;</td>
+                <td>Table Footer <br> <br> The bottom part of a long table that is often used to contain sums, differences, and other data results</td>
+                <td></td>
+                <td class="code">
+                    &lt;table&gt; <br> 
+                        <span class="tab">&lt;thead&gt;</span> <br>
+                            <span class="double-tab">&lt;tr&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th&gt;&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="col"&gt;Temperature&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="col"&gt;Wind Speed&lt;/th&gt;</span> <br> 
+                            <span class="double-tab">&lt;/tr&gt;</span> <br> 
+                        <span class="tab">&lt;/thead&gt;</span> <br>
+                        <span class="tab">&lt;tbody&gt;</span> <br>
+                            <span class="double-tab">&lt;tr&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="row"&gt;Saturday&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;td&gt;80</span> <br>
+                                <span class="triple-tab">&lt;td&gt;3 mph</span> <br>
+                            <span class="double-tab">&lt;/tr&gt;</span> <br> 
+                            <span class="double-tab">&lt;tr&gt;</span> <br> 
+                                <span class="triple-tab">&lt;th scope="row"&gt;Sunday&lt;/th&gt;</span> <br> 
+                                <span class="triple-tab">&lt;td&gt;87</span> <br>
+                                <span class="triple-tab">&lt;td&gt;12 mph</span> <br>
+                            <span class="double-tab">&lt;/tr&gt;</span> <br> 
+                        <span class="tab">&lt;/tbody&gt;</span> <br>
+                        <span class="tab">&lt;tfoot&gt;</span> <br>
+                            <span class="double-tab">&lt;tr&gt;</span> <br>
+                                <span class="triple-tab">&lt;th&gt;Average&lt;/th&gt;</span> <br>
+                                <span class="triple-tab">&lt;td&gt;83.5&lt;/td&gt;</span> <br>
+                                <span class="triple-tab">&lt;td&gt;7.5 mph&lt;/td&gt;</span> <br>
+                            <span class="double-tab">&lt;/tr&gt;</span> <br>
+                        <span class="tab">&lt;/tfoot&gt;</span> <br>
+                    &lt;/table&gt;
+                </td>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th scope="col">Temperature</th>
+                                <th scope="col">Wind Speed</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Saturday</th>
+                                <td>80</td>
+                                <td>3 mph</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sunday</th>
+                                <td>87</td>
+                                <td>12 mph</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <th>Average</th>
+                            <td>83.5</td>
+                            <td>7.5 mph</td>
+                        </tfoot>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <h2>HTML Forms</h2>
+        <table style="width:100%">
+            <thead>
+                <th scope="col" style="width:15%">Form Element</th>
+                <th scope="col" style="width:25%">Code Example</th>
+                <th scope="col" style="width:35%">Notes</th>
+                <th scope="col" style="width:25%">Output</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="form-element">Create a Form</td>
+                    <td class="code">&lt;form action="/example.html" method="POST"&gt; <br> <br> &lt;/form&gt;</td>
+                    <td> The <strong class="code">action</strong> attribute determines where the information is sent <br> <br> The <strong class="code">method</strong> attribute is assigned a HTTP verb that is included in the HTTP request</td>
+                    <td><form action="/example.html" method="POST"></form></td>
+                </tr>
+                <tr>
+                    <td class="form-element">Text Input</td>
+                    <td class="code">&lt;input type="text" name="first-text-field" id="text-input" value="text"&gt; <br> <br> &lt;input type="password" name="first-password-field" id="password" value="password"&gt; <br> <br> &lt;input type="number" name="first-number-field" id="number" step="2" value="number"&gt;
+                    </td>
+                    <td>The <strong class="code">type</strong> attribute determines how it renders on the web page and what kind of data it can accept. <strong class="code">type="text"</strong> renders a text field that users can type into. Setting <strong class="code">type="password"</strong> replaces the user input with another character like an asterisk (*) or a dot (.). Using <strong class="code">type="number"</strong> restricts user input to just numbers (and a few special characters). An additional <strong class="code">step</strong> attribute can be included to create arrows inside the input field to increase or decrease by the value of the attribute. <br> The <strong class="code">id</strong> attribute is necessary so that a label can be associated with the text input <br> The <strong class="code">name</strong> attribute is used to access the value typed into the input field once the form is submitted <br> A <strong class="code">value</strong> attribute can be assigned so that users have a pre-filled text field when they first see the rendered form</td> 
+                    <td>
+                        <input type="text" name="first-text-field" id="text-input" value="text"> <br> <br>
+                        <input type="password" name="first-password-field" id="password" value="password"> <br> <br>
+                        <input type="number" name="first-number-field" id="number" step="2" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Adding a Label</td>
+                    <td class="code"> &lt;label for="text-input"&gt;Enter text: &lt;/label&gt; <br> &lt;input type="text" name="first-text-field" id="text-input"&gt; </td>
+                    <td>The value of the <strong class="code">for</strong> attribute must match the value of the <strong class="code">id</strong> attribute of the corresponding text input</td> 
+                    <td>
+                        <label for="text-input">Enter text: </label>
+                        <input type="text" name="first-text-field" id="text-input">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Range Input</td>
+                    <td class="code"> &lt;label for="volume"&gt;Volume Control &lt;/label&gt; <br> &lt;input type="range" name="range-field" id="volume" min="0" max="100" step="1"&gt; </td>
+                    <td>Creates a slider which limits options for the user <br> Using <strong class="code">type="range"</strong> creates a slider which limits options for the user <br> The <strong class="code">min</strong> and <strong class="code">max</strong> attributes can be used to assign minimum and maximum values <br> The <strong class="code">step</strong> attribute contols how smooth and fluid the slider is</td> 
+                    <td>
+                        <label for="volume">Volume Control </label>
+                        <input type="range" name="range-field" id="volume" min="0" max="100" step="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Checkbox Input</td>
+                    <td class="code"> &lt;input id="pepperoni" name="topping" type="checkbox" value="pepperoni"&gt; &lt;label for="pepperoni"&gt;Pepperoni&lt;/label&gt; &lt;br&gt; <br> &lt;input id="cheese" name="topping" type="checkbox" value="cheese"&gt; &lt;label for="cheese"&gt;Cheese&lt;/label&gt; &lt;br&gt; <br> &lt;input id="sausage" name="topping" type="checkbox" value="sausage"&gt; &lt;label for="sausage"&gt;Sausage&lt;/label&gt; </td>
+                    <td>Checkboxes are used to allow users to select multiple pre-defined options <br> Using the same value for the <strong class="code">name</strong> attribute appropriately groups checkbox <strong class="code">&lt;input&gt;</strong> elements</td> 
+                    <td>
+                        <input id="pepperoni" name="topping" type="checkbox" value="pepperoni"> <label for="pepperoni">Pepperoni</label> <br>
+                        <input id="cheese" name="topping" type="checkbox" value="cheese"> <label for="cheese">Cheese</label> <br>
+                        <input id="sausage" name="topping" type="checkbox" value="sausage"> <label for="sausage">Sausage</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Radio Button Input</td>
+                    <td class="code"> &lt;input id="yes" name="option" type="radio" value="yes"&gt; &lt;label for="yes"&gt;Yes&lt;/label&gt; &lt;br&gt; <br> &lt;input id="no" name="option" type="radio" value="no"&gt; &lt;label for="no"&gt;No&lt;/label&gt; &lt;br&gt; <br> &lt;input id="maybe" name="option" type="maybe" value="maybe"&gt; &lt;label for="maybe"&gt;Maybe&lt;/label&gt; </td>
+                    <td>Radio buttons are used when you only want users to choose 1 option from a pre-defined list</td> 
+                    <td>
+                        <input id="yes" name="option" type="radio" value="yes"> <label for="yes">Yes</label> <br>
+                        <input id="no" name="option" type="radio" value="no"> <label for="no">No</label> <br>
+                        <input id="maybe" name="option" type="radio" value="maybe"> <label for="maybe">Maybe</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Dropdown List</td>
+                    <td class="code"> 
+                        &lt;select id="color" name="color"&gt; 
+                            <span class="tab">&lt;option value="red"&gt;Red&lt;/option&gt;</span> <br>
+                            <span class="tab">&lt;option value="orange"&gt;Orange&lt;/option&gt;</span> <br>
+                            <span class="tab">&lt;option value="yellow"&gt;Yellow&lt;/option&gt;</span> <br>
+                            <span class="tab">&lt;option value="green"&gt;Green&lt;/option&gt;</span> <br>
+                            <span class="tab">&lt;option value="blue"&gt;Blue&lt;/option&gt;</span> <br>
+                            <span class="tab">&lt;option value="purple"&gt;Purple&lt;/option&gt;</span> <br>
+                        &lt;/select&gt;
+                    </td>
+                    <td>Dropdowns allow users to choose one option from an organized list</td> 
+                    <td>
+                        <select id="color" name="color">
+                            <option value="red">Red</option>
+                            <option value="orange">Orange</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                            <option value="purple">Purple</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Datalist Input</td>
+                    <td class="code"> 
+                        &lt;input type="text" list="cities" id="city" name="city"&gt; 
+                            <span class="tab">&lt;datalist id="cities"&gt;</span> <br>
+                                <span class="double-tab">&lt;option value="New York City"&gt; &lt;/option&gt;</span> <br>
+                                <span class="double-tab">&lt;option value="Tokyo"&gt; &lt;/option&gt;</span> <br>
+                                <span class="double-tab">&lt;option value="Barcelona"&gt; &lt;/option&gt;</span> <br>
+                                <span class="double-tab">&lt;option value="Mexico City"&gt; &lt;/option&gt;</span> <br>
+                                <span class="double-tab">&lt;option value="Melbourne"&gt; &lt;/option&gt;</span> <br>
+                            <span class="tab">&lt;/datalist&gt;</span>
+                    </td>
+                    <td>A datalist allows a user to type into the input and filter to select one option. If none of the options satisfy the user, they can submit whatever they type into the input field <br> <br> The <strong class="code">&lt;input&gt;</strong> element has a <strong class="code">list</strong> attribute that should match the <strong class="code">&lt;datalist&gt;</strong> element's <strong class="code">id</strong> attribute</td> 
+                    <td>
+                        <input type="text" list="cities" id="city" name="city">
+                            <datalist id="cities">
+                                <option value="New York City"></option>
+                                <option value="Tokyo"></option>
+                                <option value="Barcelona"></option>
+                                <option value="Mexico City"></option>
+                                <option value="Melbourne"></option>
+                            </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Textarea Element</td>
+                    <td class="code"> 
+                        &lt;textarea id="blog" name="blog" rows="5" cols="30"&gt;Default text&lt;/textarea&gt;
+                    </td>
+                    <td>A textarea is used when more than one row of text will be inputted <br> <br> The <strong class="code">rows</strong> and <strong class="code">cols</strong> attributes can be added to determine the amount of rows and columns for the <strong class="code">&lt;textarea&gt;</strong></td> 
+                    <td>
+                        <textarea id="blog" name="blog" rows="5" cols="30">Default text</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Submit a Form</td>
+                    <td class="code"> 
+                        &lt;input type="submit" value="Send"&gt;
+                    </td>
+                    <td>The <strong class="code">value</strong> attribute determines the text shown on the button. If the <strong class="code">value</strong> attribute is omitted, the default text, Submit, is used</td> 
+                    <td>
+                        <input type="submit" value="Send">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Requiring an Input</td>
+                    <td class="code"> 
+                        &lt;input id="allergies" name="allergies" type="text" required&gt;
+                    </td>
+                    <td>The <strong class="code">required</strong> attribute is used when fields with a form are not optional, meaning there must be information provided before it can be submitted. <br> <br> The styling of the requirement message will vary from browser to browser</td> 
+                    <td>
+                        <input id="allergies" name="allergies" type="text" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Set a Minimum and Maximum for a Number Field</td>
+                    <td class="code"> 
+                        &lt;input id="guests" name="guests" type="number" min="1" max="4"&gt;
+                    </td>
+                    <td>The <strong class="code">min</strong> and <strong class="code">max</strong> attributes are used to specify the minimum and maximum numerical values a user may submit. <br> <br> A warning will appear if the user enters a number outside the acceptable range</td> 
+                    <td>
+                        <input id="guests" name="guests" type="number" min="1" max="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Checking Text Length</td>
+                    <td class="code"> 
+                        &lt;input id="summary" name="summary" type="text" minlength="5" maxlength="250" required&gt;
+                    </td>
+                    <td>The <strong class="code">minlength</strong> and <strong class="code">maxlength</strong> attributes are declared to set the minimum and maximum characters for a text field <br> <br> A warning will appear if the user tries to sumit too few text characters. No warning message will appear if the user attempts to submit too many text characters, instead they won't even be able to input text characters over the maximum</td> 
+                    <td>
+                        <input id="summary" name="summary" type="text" minlength="5" maxlength="250" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-element">Matching a Pattern</td>
+                    <td class="code"> 
+                        &lt;input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}"&gt;
+                    </td>
+                    <td>For cases when we want user input to follow specific guidelines, we use the <strong class="code">pattern</strong> attribute and assign it a regular expression (regex) <br> <br> A warning message will appear if the user tries to submit input that doesn't follow the regex <br> <br> In the example, [0-9]{14,16}, requires the user to enter a 14-16 digit number</td> 
+                    <td>
+                        <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

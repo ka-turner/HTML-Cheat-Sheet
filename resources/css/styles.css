@@ -1,0 +1,53 @@
+.tab {
+    margin-left: 25px;
+}
+
+.double-tab {
+    margin-left: 50px;
+}
+
+.triple-tab {
+    margin-left: 75px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+th {
+    font-size: larger;
+    background-color: lightblue;
+}
+
+.code {
+    font-family: monospace;
+}
+
+.tag-name {
+    font-weight: bold;
+}
+
+.span-example {
+    color: blue;
+}
+
+td img, td video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#outline {
+    border:5px dashed violet;
+    padding:15px;
+}
+
+.form-element {
+    background-color: lightgray;
+    font-weight:bold;
+}
